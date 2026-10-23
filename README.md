@@ -20,4 +20,4 @@ This repository only adapts model inference; no `sim2real` dependency.
 
 **Development adapter — author-inference review pending.**
 [Provenance](provenance.json) · [Review requirements](motion-challenge/docs/ADAPTERS.md) ·
-[Website](https://motion-challenge-project.epiccabin1025.chatgpt.site)
+[Website](https://motion-challenge-project.github.io/motion-challenge-project)
