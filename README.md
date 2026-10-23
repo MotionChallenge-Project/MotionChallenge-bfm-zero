@@ -18,17 +18,18 @@ Results and traces are written outside Git. `--help` lists options.
 The root `motion-challenge` submodule owns data, physics, metrics and verification.
 This repository only adapts model inference; no `sim2real` dependency.
 
-**Development adapter — author-inference review pending.**
 [Provenance](provenance.json)
 
 MuJoCo 3.17 batch is the default. Use `--jobs 8` for parallel clips;
 download and evaluation progress updates every 5 seconds.
 
-Run all frames after tracking failure: `uv run evaluate.py --termination none`.
-This records full-motion errors under a separate protocol; success still requires no failure.
 
 ## Checkpoint source
 
 [LeCAR-Lab/BFM-Zero](https://github.com/LeCAR-Lab/BFM-Zero/blob/df9c4a9633aa155c727419e82c906010b1e1845f/README.md) · [model/checkpoint/model/model.safetensors → policy.onnx](https://huggingface.co/LeCAR-Lab/BFM-Zero/blob/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors). Motion Challenge conversion; publication incomplete.
 
 Motion Challenge exported the actor/backward map from the original safetensors checkpoint. The public conversion chain is incomplete and the configured release download currently returns 404; results are withheld.
+
+One `uv run evaluate.py` produces one verified `result.json`: success, completion,
+three MPBPE alignments through first failure and the same three over the full motion.
+Both scopes use the same checkpoint and source revision; no branch switching is needed.
