@@ -24,3 +24,6 @@ This repository only adapts model inference; no `sim2real` dependency.
 
 MuJoCo 3.17 batch is the default. Use `--jobs 8` for parallel clips;
 download and evaluation progress updates every 5 seconds.
+
+Run all frames after tracking failure: `uv run evaluate.py --termination none`.
+This records full-motion errors under a separate protocol; success still requires no failure.
