@@ -19,8 +19,7 @@ The root `motion-challenge` submodule owns data, physics, metrics and verificati
 This repository only adapts model inference; no `sim2real` dependency.
 
 **Development adapter — author-inference review pending.**
-[Provenance](provenance.json) · [Review requirements](motion-challenge/docs/ADAPTERS.md) ·
-[Website](https://motion-challenge-project.github.io/motion-challenge-project)
+[Provenance](provenance.json)
 
 MuJoCo 3.17 batch is the default. Use `--jobs 8` for parallel clips;
 download and evaluation progress updates every 5 seconds.
