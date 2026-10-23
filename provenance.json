@@ -8,5 +8,17 @@
   "author_inference_review": "pending",
   "benchmark_physics": "shared G1 canonical profile, not the author training simulator",
   "legacy_results": "not transferable to this adapter revision without rerunning",
-  "redistribution": "checkpoint not distributed in Git; obtain from recorded upstream URL under its original terms"
+  "redistribution": "checkpoint not distributed in Git; obtain from recorded upstream URL under its original terms",
+  "checkpoint_origin": {
+    "author_release_url": "https://github.com/LeCAR-Lab/BFM-Zero/blob/df9c4a9633aa155c727419e82c906010b1e1845f/README.md",
+    "author_release_label": "LeCAR-Lab/BFM-Zero",
+    "kind": "maintainer_export",
+    "kind_label": "Motion Challenge conversion; publication incomplete",
+    "artifact_page_url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/blob/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
+    "original_filename": "model/checkpoint/model/model.safetensors \u2192 policy.onnx",
+    "verification": "Motion Challenge exported the actor/backward map from the original safetensors checkpoint. The public conversion chain is incomplete and the configured release download currently returns 404; results are withheld.",
+    "download_url": "https://github.com/motion-challenge-project/motion-challenge-bfm-zero/releases/download/checkpoint-v1/policy.onnx",
+    "sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+    "original_sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e"
+  }
 }
