@@ -1,0 +1,12 @@
+{
+  "model": "bfm-zero",
+  "submitter": "Motion Challenge",
+  "submission_type": "maintainer reproduction, not author submission",
+  "upstream": "https://github.com/LeCAR-Lab/BFM-Zero",
+  "source_commit": "df9c4a9633aa155c727419e82c906010b1e1845f",
+  "checkpoint_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+  "author_inference_review": "pending",
+  "benchmark_physics": "shared G1 canonical profile, not the author training simulator",
+  "legacy_results": "not transferable to this adapter revision without rerunning",
+  "redistribution": "checkpoint not distributed in Git; obtain from recorded upstream URL under its original terms"
+}
