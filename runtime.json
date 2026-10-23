@@ -26,5 +26,6 @@
   "source_repository": "https://github.com/LeCAR-Lab/BFM-Zero",
   "source_commit": "df9c4a9633aa155c727419e82c906010b1e1845f",
   "tracking_inference": "official uniform 8-frame latent mean, not notebook customized discount variant",
-  "official": false
+  "official": false,
+  "weights_url": "https://github.com/motion-challenge-project/motion-challenge-bfm-zero/releases/download/checkpoint-v1/policy.onnx"
 }
