@@ -12,3 +12,4 @@ results/
 runs/
 .env
 .DS_Store
+:memory:.ses
