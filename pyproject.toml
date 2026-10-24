@@ -1,12 +1,12 @@
 [project]
-name = "motion-challenge-bfm-zero"
+name = "MotionChallenge-bfm-zero"
 version = "0.1.0"
 requires-python = ">=3.12,<3.13"
-dependencies = ["motion-challenge", "torch==2.14.1", "onnx==1.23.2",
+dependencies = ["MotionChallenge-Core", "torch==2.14.1", "onnx==1.23.2",
                 "safetensors==0.7.0", "gymnasium==1.2.2", "pydantic==2.12.5"]
 
 [tool.uv.sources]
-motion-challenge = {path = "MotionChallenge-Core", editable = true}
+motionchallenge-core = {path = "MotionChallenge-Core", editable = true}
 torch = [{index = "pytorch-cpu", marker = "sys_platform == 'linux'"}]
 
 [[tool.uv.index]]

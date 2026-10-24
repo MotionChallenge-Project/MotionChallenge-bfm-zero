@@ -63,7 +63,7 @@ def build_inference(source, weights):
 def prepare(destination, source=None, weights=None):
     import torch
 
-    cache = Path(os.environ.get('BFM_ZERO_ARTIFACT_CACHE', '~/.cache/motion-challenge/bfm-zero')).expanduser()
+    cache = Path(os.environ.get('BFM_ZERO_ARTIFACT_CACHE', '~/.cache/MotionChallenge/bfm-zero')).expanduser()
     source = Path(source) if source else cache/'source'
     weights = Path(weights) if weights else cache/'weights'
     manifest = load_sources(source)

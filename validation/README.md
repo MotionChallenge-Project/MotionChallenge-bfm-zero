@@ -23,12 +23,12 @@ for reference encoding; benchmark geometry is unchanged.
 ```bash
 git clone https://github.com/LeCAR-Lab/BFM-Zero.git /tmp/bfm-author
 git -C /tmp/bfm-author checkout df9c4a9633aa155c727419e82c906010b1e1845f
-# The default evaluation first populates ~/.cache/motion-challenge/bfm-zero/weights.
+# The default evaluation first populates ~/.cache/MotionChallenge/bfm-zero/weights.
 uv run -m conversion.prepare --source /tmp/bfm-author \
-  --weights ~/.cache/motion-challenge/bfm-zero/weights --output /tmp/bfm-policy.onnx
+  --weights ~/.cache/MotionChallenge/bfm-zero/weights --output /tmp/bfm-policy.onnx
 uv run validate_inference.py --source /tmp/bfm-author \
-  --original ~/.cache/motion-challenge/bfm-zero/weights --onnx /tmp/bfm-policy.onnx \
-  --data ~/.cache/motion-challenge/lafan --output /tmp/bfm-native-parity.json
+  --original ~/.cache/MotionChallenge/bfm-zero/weights --onnx /tmp/bfm-policy.onnx \
+  --data ~/.cache/MotionChallenge/lafan --output /tmp/bfm-native-parity.json
 ```
 
 `BFM_ZERO_ARTIFACT_CACHE` can redirect the source/weight cache. The 160-case

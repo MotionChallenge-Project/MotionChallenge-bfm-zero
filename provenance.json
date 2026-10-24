@@ -1,6 +1,6 @@
 {
   "model": "bfm-zero",
-  "submitter": "Motion Challenge",
+  "submitter": "MotionChallenge",
   "submission_type": "maintainer reproduction, not author submission",
   "upstream": "https://github.com/LeCAR-Lab/BFM-Zero",
   "source_commit": "df9c4a9633aa155c727419e82c906010b1e1845f",
