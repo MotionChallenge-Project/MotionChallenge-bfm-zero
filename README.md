@@ -22,4 +22,4 @@ Later runs reuse the cache. Use `--weights PATH --data PATH --offline` for cache
 
 ## Observations
 
-Ideal proprioception, without robot world-position or contact feedback. [Checkpoint requirements](admission.json) · [Rules](MotionChallenge-Core/docs/OBSERVATIONS.md).
+Ideal proprioception, without robot world-position or contact feedback. [Checkpoint requirements](admission.json) · [Rules](https://github.com/MotionChallenge-Project/MotionChallenge-Core/blob/11873584f838ba29fd2a2327ca15016192c3f3e1/docs/OBSERVATIONS.md).
