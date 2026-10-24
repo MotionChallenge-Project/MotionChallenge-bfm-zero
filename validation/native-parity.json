@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "cases": 160,
+  "resets": 4,
+  "endpoint_cases": 32,
+  "shuffled_joint_order": true,
+  "source_commit": "df9c4a9633aa155c727419e82c906010b1e1845f",
+  "checkpoint_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+  "max_abs_errors": {
+    "actor_observation": 0.0,
+    "reference_state": 0.0,
+    "reference_privileged": 9.5367431640625e-07,
+    "latent": 5.919113755226135e-05,
+    "action": 0.00012827664613723755,
+    "pd_torque": 0.0,
+    "same_inputs_action": 0.00011967122554779053,
+    "same_inputs_latent": 8.910894393920898e-06,
+    "motor_target_end_to_end": 0.00028130412101745605
+  },
+  "tolerances": {
+    "actor_observation": 2e-05,
+    "reference_state": 2e-05,
+    "reference_privileged": 2e-05,
+    "latent": 0.0001,
+    "action": 0.0002,
+    "pd_torque": 1e-06,
+    "same_inputs_action": 0.0002,
+    "same_inputs_latent": 0.0001,
+    "motor_target_end_to_end": 0.001
+  },
+  "comparison": "Same input states and previous actions; motor mapping also checked on identical raw action.",
+  "numerical_note": "ONNX and PyTorch CPU float32 are not bitwise equivalent. An initial 2e-5 raw-action gate failed; same-input isolation measured backend roundoff. Acceptance additionally requires end-to-end motor-target error below 1e-3 rad, exact actor observation/history and identical-action PD mapping within stated tolerances. No weights, precision or observation inputs were tuned.",
+  "torch_version": "2.14.1"
+}

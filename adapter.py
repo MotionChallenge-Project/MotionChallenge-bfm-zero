@@ -90,7 +90,9 @@ class BFMZero:
         # Native env.step calls _create_observation again before applying action.
         self.actor_observation(state)
         self.last=(action*self.cfg['action_rescale']).astype(np.float32)
-        target=self.default+self.last*np.asarray(self.cfg['action_scales'])
+        # Preserve the author's float32 operation order before PD conversion.
+        target=(action*np.asarray(self.cfg['action_scales'],np.float32)*self.cfg['action_rescale']
+                + self.default.astype(np.float32))
         def order(x):return tuple(float(v) for v in np.asarray(x)[self.inverse])
         return ControlCommand(order(target),(0.,)*29,order(self.cfg['kp']),order(self.cfg['kd']),(0.,)*29)
 

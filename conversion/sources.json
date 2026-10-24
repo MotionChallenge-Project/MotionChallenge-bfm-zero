@@ -1,0 +1,105 @@
+{
+  "repository": "https://github.com/LeCAR-Lab/BFM-Zero",
+  "commit": "df9c4a9633aa155c727419e82c906010b1e1845f",
+  "checkpoint_repository": "https://huggingface.co/LeCAR-Lab/BFM-Zero",
+  "checkpoint_revision": "62b4206d68e026de5e5dc7efb1529bccfb95164c",
+  "source_files": {
+    "README.md": {
+      "sha256": "7b9cda4673e2d9664ed826d2402401be9bbaa6cd00dc3f48a918b786ed73fbd3",
+      "bytes": 5234,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/README.md"
+    },
+    "bfm_zero_inference_code/base.py": {
+      "sha256": "b1cf05ef755fcccaab727c3aafb0743f9e7f07f5bcb4583e61ae3272d9262cc4",
+      "bytes": 1779,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/bfm_zero_inference_code/base.py"
+    },
+    "bfm_zero_inference_code/base_model.py": {
+      "sha256": "88e8c628d2ba2a2d1d963516d296b29afd82c307ccfeb63ee9281d9efe9ba0c5",
+      "bytes": 3893,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/bfm_zero_inference_code/base_model.py"
+    },
+    "bfm_zero_inference_code/fb/model.py": {
+      "sha256": "a54c5c4b7a044dac703249995011115d06c8d346ca9f2982ebe87d9ae79fd793",
+      "bytes": 6066,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/bfm_zero_inference_code/fb/model.py"
+    },
+    "bfm_zero_inference_code/fb_cpr_aux/model.py": {
+      "sha256": "1059432e0c6a6cff8d444ba30f9a24126c075511144778307fe133ed15176ba6",
+      "bytes": 3948,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/bfm_zero_inference_code/fb_cpr_aux/model.py"
+    },
+    "bfm_zero_inference_code/inference/rewards.py": {
+      "sha256": "ef69faa1b0efe93387d6596c6d91b0863a1b749ca25508aaf474de22bb6ffb7a",
+      "bytes": 24602,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/bfm_zero_inference_code/inference/rewards.py"
+    },
+    "bfm_zero_inference_code/inference/utils.py": {
+      "sha256": "98ee65a0b5d1fef51283e123e280d14fd87f42856d087520c479a20269fa0a82",
+      "bytes": 3257,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/bfm_zero_inference_code/inference/utils.py"
+    },
+    "bfm_zero_inference_code/misc/gym_spaces.py": {
+      "sha256": "9e6ae85890b66ebb55f892765437330178d9c6f465d49961b15829696244a985",
+      "bytes": 2288,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/bfm_zero_inference_code/misc/gym_spaces.py"
+    },
+    "bfm_zero_inference_code/nn_filters.py": {
+      "sha256": "1d279d945f300acd4e545b58f80f233052b9c93edbaecb88d94fb40ec821cc15",
+      "bytes": 4503,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/bfm_zero_inference_code/nn_filters.py"
+    },
+    "bfm_zero_inference_code/nn_models.py": {
+      "sha256": "bace2c9967320ab0cf1e570054acf1f7e0378f15690e11af11fcce462b3a9254",
+      "bytes": 29078,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/bfm_zero_inference_code/nn_models.py"
+    },
+    "bfm_zero_inference_code/normalizers.py": {
+      "sha256": "9b0e039e3380878d5b5caad7786d6ec0e37f1e3ae9eb48dac82085ba01175c57",
+      "bytes": 3271,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/bfm_zero_inference_code/normalizers.py"
+    },
+    "common.py": {
+      "sha256": "37eaaf17585f08ebf769b5ea3d70e36cbe90077e8b47060601b0ce3be3561c84",
+      "bytes": 7491,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/common.py"
+    },
+    "download_hf_model.py": {
+      "sha256": "a44d1f116138ba00d3b930500f546ce84f935640df6f3c9c2444cb85af803339",
+      "bytes": 2829,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/download_hf_model.py"
+    },
+    "env.py": {
+      "sha256": "a65357ce9df441aa87ce812e1224393e03bea919544942967da5cdabb1f9f9d5",
+      "bytes": 30834,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/env.py"
+    },
+    "inference_tutorial.ipynb": {
+      "sha256": "bdf83cda376639e2c00313c619881bb3e33fc7b2e3ebbaa1d708b88eb37da194",
+      "bytes": 502886,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/inference_tutorial.ipynb"
+    },
+    "requirements.txt": {
+      "sha256": "de5940923cdf022dd2e6608adcaacafb18b55efef207b6855b009ae94f91ceef",
+      "bytes": 2950,
+      "url": "https://raw.githubusercontent.com/LeCAR-Lab/BFM-Zero/df9c4a9633aa155c727419e82c906010b1e1845f/requirements.txt"
+    }
+  },
+  "artifacts": {
+    "config.json": {
+      "url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/resolve/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/config.json",
+      "bytes": 3805,
+      "sha256": "aee5e94fd089979cb31d1f1a5fa4905e926398231d46dc8eb2047e25b8d2935b"
+    },
+    "init_kwargs.json": {
+      "url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/resolve/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/init_kwargs.json",
+      "bytes": 57778,
+      "sha256": "b8df2d6006fbeda9a0bb9a9eb3f21dcccadf165f2252fce108714f81655a0094"
+    },
+    "model.safetensors": {
+      "url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/resolve/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
+      "sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e",
+      "bytes": 3384968272
+    }
+  }
+}

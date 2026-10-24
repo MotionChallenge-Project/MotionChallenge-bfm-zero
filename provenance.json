@@ -5,7 +5,7 @@
   "upstream": "https://github.com/LeCAR-Lab/BFM-Zero",
   "source_commit": "df9c4a9633aa155c727419e82c906010b1e1845f",
   "checkpoint_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
-  "author_inference_review": "pending",
+  "author_inference_review": "160 cases/4 resets/32 endpoint cases passed stated tolerances; zero actor-observation and identical-action PD mapping difference; CPU ONNX/PyTorch maximum motor-target difference 2.82e-4 rad.",
   "benchmark_physics": "shared G1 canonical profile, not the author training simulator",
   "legacy_results": "not transferable to this adapter revision without rerunning",
   "redistribution": "checkpoint not distributed in Git; obtain from recorded upstream URL under its original terms",
@@ -13,12 +13,15 @@
     "author_release_url": "https://github.com/LeCAR-Lab/BFM-Zero/blob/df9c4a9633aa155c727419e82c906010b1e1845f/README.md",
     "author_release_label": "LeCAR-Lab/BFM-Zero",
     "kind": "maintainer_export",
-    "kind_label": "Motion Challenge conversion; publication incomplete",
+    "kind_label": "Reproducible export from author checkpoint",
     "artifact_page_url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/blob/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
     "original_filename": "model/checkpoint/model/model.safetensors \u2192 policy.onnx",
-    "verification": "Motion Challenge exported the actor/backward map from the original safetensors checkpoint. The public conversion chain is incomplete and the configured release download currently returns 404; results are withheld.",
-    "download_url": "https://github.com/motion-challenge-project/motion-challenge-bfm-zero/releases/download/checkpoint-v1/policy.onnx",
+    "verification": "conversion/prepare.py verifies the original artifact and source hashes, strictly loads62 inference tensors and exports a hash-locked ONNX. Fresh macOS export matches prior Linux SHA256.",
+    "download_url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/resolve/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
     "sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
-    "original_sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e"
-  }
+    "original_sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e",
+    "conversion_code": "conversion/prepare.py",
+    "source_manifest": "conversion/sources.json"
+  },
+  "inference_validation": "validation/native-parity.json"
 }
