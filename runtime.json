@@ -22,7 +22,7 @@
   "inference_config_sha256": "39e4605b2a0dbb99379203fddc007d8b0ca23d4e1f9796569889097b78be71bf",
   "weights": "checkpoints/policy.onnx",
   "weights_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
-  "provenance_status": "author-inference comparison passed; numerical tolerances disclosed",
+  "provenance_status": "Author inference comparison passed; see validation/native-parity.json",
   "source_repository": "https://github.com/LeCAR-Lab/BFM-Zero",
   "source_commit": "df9c4a9633aa155c727419e82c906010b1e1845f",
   "tracking_inference": "official uniform 8-frame latent mean, not notebook customized discount variant",
@@ -30,6 +30,6 @@
   "prepare_checkpoint": "conversion.prepare:prepare",
   "observation_contract": {
     "admission_record": "admission.json",
-    "admission_sha256": "30fa11d4acaf6937de74d4c610f2af4f028ce871df89432a5d00a3d546b1c699"
+    "admission_sha256": "c5f02263945a0eddfd131abcb643cfda84dbb5acb02a159a693d3866ecd748f9"
   }
 }

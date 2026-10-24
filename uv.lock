@@ -194,7 +194,7 @@ requires-dist = [
 
 [[package]]
 name = "motionchallenge-core"
-version = "0.0.2.dev0"
+version = "0.1.0"
 source = { editable = "MotionChallenge-Core" }
 dependencies = [
     { name = "mujoco" },

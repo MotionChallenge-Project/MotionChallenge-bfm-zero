@@ -12,7 +12,7 @@ uv run evaluate.py
 ```
 
 Produces success, completion and six MPBPE values in a verified `result.json`.
-MuJoCo 3.17 CPU batch; `--jobs 8` sets parallelism. Results and traces stay outside Git.
+MuJoCo 3.17 CPU batch; `--jobs` sets parallelism. Results and traces stay outside Git.
 
 The first run downloads the author's 3.38 GB checkpoint and pinned source, then
 exports only the actor, backward map and normalizer to a SHA256-checked ONNX file.
