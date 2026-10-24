@@ -19,3 +19,9 @@ exports only the actor, backward map and normalizer to a SHA256-checked ONNX fil
 Later runs reuse the cache. Use `--weights PATH --data PATH --offline` for cached artifacts.
 
 [Inference and export validation](validation/README.md) · [Native parity report](validation/native-parity.json)
+
+## Observation track
+
+Default: **ideal proprioception, no global position feedback**. [Admission and special handling](admission.json) · [Rules](MotionChallenge-Core/docs/OBSERVATIONS.md).
+
+For the original privileged-state track: `uv run evaluate.py --track privileged`.

@@ -1,0 +1,52 @@
+{
+  "schema": "MotionChallenge/observation-admission-v1",
+  "model": "bfm-zero",
+  "display_name": "BFM-Zero",
+  "state_access": "ideal-proprioceptive-no-position-v1",
+  "status": "inference_verified",
+  "checkpoint_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+  "auxiliary_artifacts": {},
+  "checkpoint_origin": {
+    "author_release_url": "https://github.com/LeCAR-Lab/BFM-Zero/blob/df9c4a9633aa155c727419e82c906010b1e1845f/README.md",
+    "author_release_label": "LeCAR-Lab/BFM-Zero",
+    "kind": "maintainer_export",
+    "kind_label": "Reproducible export from author checkpoint",
+    "artifact_page_url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/blob/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
+    "original_filename": "model/checkpoint/model/model.safetensors \u2192 policy.onnx",
+    "verification": "conversion/prepare.py verifies the original artifact and source hashes, strictly loads62 inference tensors and exports a hash-locked ONNX. Fresh macOS export matches prior Linux SHA256.",
+    "download_url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/resolve/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
+    "sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+    "original_sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e",
+    "conversion_code": "conversion/prepare.py",
+    "source_manifest": "conversion/sources.json"
+  },
+  "author_source": "https://github.com/LeCAR-Lab/BFM-Zero",
+  "author_commit": "df9c4a9633aa155c727419e82c906010b1e1845f",
+  "base_adapter_commit": "4b02a1a093d5beb5aad757b65f8b508ee4490395",
+  "production_source_sha256": {
+    "adapter.py": "426843e9256987333a449c823c1098f9e8e9e07fc89932128ebec8371f6e392e",
+    "conversion/__init__.py": "c86cc98a6167759c4050768626735330f39ee9767643fd3fc679887da72eab67",
+    "conversion/prepare.py": "f0fa099ce845da9afc51ea44ff35d43b3eae1eefe859e326a754248273c7f9c4",
+    "evaluate.py": "0ebb8c761f00dd963f2e45c85ecb94628273911bb1edfc0f2621e8fc458cb4ff",
+    "policy.json": "39e4605b2a0dbb99379203fddc007d8b0ca23d4e1f9796569889097b78be71bf",
+    "validate_inference.py": "827e3d4dd3a6cfe42ea754eaf22373284cbc350fd5c76bd2a5140ce9e23fe96f"
+  },
+  "prior_native_parity_sha256": {
+    "validation/native-parity.json": "c111dd6792b8430db750bcf997fcbae74d7707c7762c913630fa7a808cc553b8"
+  },
+  "handling": "reference_privileged is a REFERENCE-only backward-encoder input. Actor proprioception and the author double history insertion are retained; no measured translation.",
+  "actual_position_integration": "No explicit integration or odometry in the inspected deployed adapter source; blocked paths are listed separately.",
+  "special_handling": "FK of allowed state at fixed synthetic origin (0,0,0); never actual measured origin.",
+  "new_evaluation": {
+    "status": "queued",
+    "inherited_scores": false
+  },
+  "repository": "https://github.com/MotionChallenge-Project/MotionChallenge-bfm-zero",
+  "dependency_test": {
+    "path": "validation/observation-access.json",
+    "sha256": "f77d02ad54e0ce9b2d3c137ac3cb637dd16d4b3b6645ca7177a778a83f7163c3",
+    "code": "validate_observations.py",
+    "cases": 160,
+    "resets": 4
+  }
+}

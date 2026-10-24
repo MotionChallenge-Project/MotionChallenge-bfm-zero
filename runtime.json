@@ -27,5 +27,13 @@
   "source_commit": "df9c4a9633aa155c727419e82c906010b1e1845f",
   "tracking_inference": "official uniform 8-frame latent mean, not notebook customized discount variant",
   "official": false,
-  "prepare_checkpoint": "conversion.prepare:prepare"
+  "prepare_checkpoint": "conversion.prepare:prepare",
+  "default_track": "ideal-proprioception",
+  "observation_tracks": {
+    "ideal-proprioception": {
+      "entrypoint": "restricted:create",
+      "admission_record": "admission.json",
+      "admission_sha256": "30fa11d4acaf6937de74d4c610f2af4f028ce871df89432a5d00a3d546b1c699"
+    }
+  }
 }
