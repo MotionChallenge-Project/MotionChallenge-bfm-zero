@@ -170,7 +170,7 @@ wheels = [
 [[package]]
 name = "motion-challenge"
 version = "0.0.2.dev0"
-source = { editable = "motion-challenge" }
+source = { editable = "MotionChallenge-Core" }
 dependencies = [
     { name = "mujoco" },
     { name = "numpy" },
@@ -205,7 +205,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "gymnasium", specifier = "==1.2.2" },
-    { name = "motion-challenge", editable = "motion-challenge" },
+    { name = "motion-challenge", editable = "MotionChallenge-Core" },
     { name = "onnx", specifier = "==1.23.2" },
     { name = "pydantic", specifier = "==2.12.5" },
     { name = "safetensors", specifier = "==0.7.0" },

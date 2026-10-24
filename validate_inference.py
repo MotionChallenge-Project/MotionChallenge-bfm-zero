@@ -50,10 +50,10 @@ def main():
                         ('kp', 'KP_GAINS'), ('kd', 'KD_GAINS'), ('action_scales', 'ACTION_SCALES')]:
         np.testing.assert_array_equal(adapter.cfg[field], getattr(common, name))
 
-    world = World(root/'motion-challenge/robots/g1-29dof-cpu-v0.json')
+    world = World(root/'MotionChallenge-Core/robots/g1-29dof-cpu-v0.json')
     # A fixed head frame is needed only by the author's reference encoder.
     # This separate read-only FK model never steps benchmark dynamics.
-    xml = ET.parse(root/'motion-challenge/robots/g1-29dof-cpu-v0.xml')
+    xml = ET.parse(root/'MotionChallenge-Core/robots/g1-29dof-cpu-v0.xml')
     ET.SubElement(xml.find(".//body[@name='torso_link']"), 'body', name='head_link', pos='0 0 .35')
     fk_model = mujoco.MjModel.from_xml_string(ET.tostring(xml.getroot(), encoding='unicode'))
     reference_env = native_env.MuJoCoBFMZeroEnv.__new__(native_env.MuJoCoBFMZeroEnv)
@@ -99,7 +99,7 @@ def main():
             np.asarray(frame.root_position_world_m), root_ang_vel=omega)
         return reference_env._create_observation_backward()
 
-    suite = json.loads((root/'motion-challenge/suites/lafan/dataset.json').read_text())
+    suite = json.loads((root/'MotionChallenge-Core/suites/lafan/dataset.json').read_text())
     captured = {}
     session = adapter.session
     class Capture:
