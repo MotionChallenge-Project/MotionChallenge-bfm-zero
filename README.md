@@ -20,8 +20,6 @@ Later runs reuse the cache. Use `--weights PATH --data PATH --offline` for cache
 
 [Inference and export validation](validation/README.md) · [Native parity report](validation/native-parity.json)
 
-## Observation track
+## Observations
 
-Default: **ideal proprioception, no global position feedback**. [Admission and special handling](admission.json) · [Rules](MotionChallenge-Core/docs/OBSERVATIONS.md).
-
-For the original privileged-state track: `uv run evaluate.py --track privileged`.
+Ideal proprioception, without robot world-position or contact feedback. [Checkpoint requirements](admission.json) · [Rules](MotionChallenge-Core/docs/OBSERVATIONS.md).

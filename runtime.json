@@ -1,6 +1,6 @@
 {
   "id": "bfm-zero-g1",
-  "entrypoint": "adapter:create",
+  "entrypoint": "restricted:create",
   "control_period_s": 0.02,
   "reference_step_s": 0.02,
   "reference_offsets_s": [
@@ -16,7 +16,7 @@
   ],
   "reference_history_s": 0.02,
   "reference_preview_s": 0.14,
-  "state_access": "privileged-state-v0",
+  "state_access": "ideal-proprioceptive-no-position-v1",
   "action_mode": "joint-pd-feedforward",
   "inference_config": "policy.json",
   "inference_config_sha256": "39e4605b2a0dbb99379203fddc007d8b0ca23d4e1f9796569889097b78be71bf",
@@ -28,12 +28,8 @@
   "tracking_inference": "official uniform 8-frame latent mean, not notebook customized discount variant",
   "official": false,
   "prepare_checkpoint": "conversion.prepare:prepare",
-  "default_track": "ideal-proprioception",
-  "observation_tracks": {
-    "ideal-proprioception": {
-      "entrypoint": "restricted:create",
-      "admission_record": "admission.json",
-      "admission_sha256": "30fa11d4acaf6937de74d4c610f2af4f028ce871df89432a5d00a3d546b1c699"
-    }
+  "observation_contract": {
+    "admission_record": "admission.json",
+    "admission_sha256": "30fa11d4acaf6937de74d4c610f2af4f028ce871df89432a5d00a3d546b1c699"
   }
 }
