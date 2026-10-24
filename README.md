@@ -5,7 +5,7 @@
 ## Install and run
 
 ```sh
-git clone --recurse-submodules https://github.com/motion-challenge-project/motion-challenge-bfm-zero.git
+git clone --recurse-submodules https://github.com/MotionChallenge-Project/motion-challenge-bfm-zero.git
 cd motion-challenge-bfm-zero
 uv sync
 uv run evaluate.py
