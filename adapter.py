@@ -4,9 +4,9 @@ The source runtime's duplicated history insertion and local finite-difference
 angular-velocity convention are preserved explicitly, including in regression
 checks. This adapter owns neither dataset loading nor benchmark physics.
 """
+from motion_challenge.adapters.onnx import cpu_session
 import json
 import numpy as np
-import onnxruntime as ort
 from scipy.spatial.transform import Rotation as R
 from motion_challenge.sdk import ControlCommand
 from motion_challenge.validation import sha256_file
@@ -35,8 +35,7 @@ class BFMZero:
         if sha256_file(root/'policy.json')!=config['inference_config_sha256']:raise ValueError('BFM config hash mismatch')
         weights=root/config['weights']
         if sha256_file(weights)!=config['weights_sha256']:raise ValueError('BFM checkpoint hash mismatch')
-        opts=ort.SessionOptions();opts.intra_op_num_threads=1;opts.inter_op_num_threads=1
-        self.session=ort.InferenceSession(str(weights),sess_options=opts,providers=['CPUExecutionProvider'])
+        self.session=cpu_session(weights,config['weights_sha256'])
         self.default=np.asarray(self.cfg['default_joint_pos'])
 
     def reset(self,state,reference,seed):

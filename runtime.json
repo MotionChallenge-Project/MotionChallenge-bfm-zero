@@ -30,6 +30,8 @@
   "prepare_checkpoint": "conversion.prepare:prepare",
   "observation_contract": {
     "admission_record": "admission.json",
-    "admission_sha256": "c5f02263945a0eddfd131abcb643cfda84dbb5acb02a159a693d3866ecd748f9"
-  }
+    "admission_sha256": "c675120400f8233104277fc9fc993f7183832ef16edc8f6fb43b51cc2d79cb66"
+  },
+  "batch_entrypoint": "parallel:create",
+  "inference_workers": 8
 }
