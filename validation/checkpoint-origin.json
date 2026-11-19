@@ -1,0 +1,30 @@
+{
+  "status": "author_release_verified",
+  "sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+  "author_release_url": "https://github.com/LeCAR-Lab/BFM-Zero/blob/df9c4a9633aa155c727419e82c906010b1e1845f/README.md",
+  "artifact_url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/resolve/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
+  "verification_scope": "The author release is the native model.safetensors file. MotionChallenge deterministically exports policy.onnx and converts its tensors; the ONNX itself is not claimed as an author-published file.",
+  "origin_audit": "validation/origin-audit.json",
+  "original_files": [
+    {
+      "url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/resolve/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
+      "sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e",
+      "bytes": 3384968272,
+      "role": "author_original"
+    }
+  ],
+  "native_sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e",
+  "native_artifact_url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/resolve/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
+  "artifact_kind": "maintainer_conversion_from_author_release",
+  "chain_status": "verified",
+  "chain": {
+    "status": "verified",
+    "native_sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e",
+    "native_artifact_url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/resolve/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
+    "exported_onnx_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+    "tensor_weights_sha256": "c62bdb7a6cb1faab6d2009d4ed685ba895b568091452f07bae3912a642a5466b",
+    "export_matches_original_checkpoint": true,
+    "tensor_weights_match_evaluated_weights": true,
+    "evidence": "validation/native-full-bootstrap.json"
+  }
+}

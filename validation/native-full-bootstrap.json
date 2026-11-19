@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "scope": "New native/export/conversion cache populated with a freshly downloaded complete upstream native checkpoint and independently SHA-verified pinned source/config artifacts; complete model-owned native export, exact ONNX check, safe tensor conversion and scalar/batch parity.",
+  "checkpoint_source_url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/resolve/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
+  "native_checkpoint_sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e",
+  "native_checkpoint_bytes": 3384968272,
+  "source_files_sha256": {
+    "bfm_zero_inference_code/base.py": "b1cf05ef755fcccaab727c3aafb0743f9e7f07f5bcb4583e61ae3272d9262cc4",
+    "bfm_zero_inference_code/base_model.py": "88e8c628d2ba2a2d1d963516d296b29afd82c307ccfeb63ee9281d9efe9ba0c5",
+    "bfm_zero_inference_code/fb/model.py": "a54c5c4b7a044dac703249995011115d06c8d346ca9f2982ebe87d9ae79fd793",
+    "bfm_zero_inference_code/fb_cpr_aux/model.py": "1059432e0c6a6cff8d444ba30f9a24126c075511144778307fe133ed15176ba6",
+    "bfm_zero_inference_code/inference/rewards.py": "ef69faa1b0efe93387d6596c6d91b0863a1b749ca25508aaf474de22bb6ffb7a",
+    "bfm_zero_inference_code/inference/utils.py": "98ee65a0b5d1fef51283e123e280d14fd87f42856d087520c479a20269fa0a82",
+    "bfm_zero_inference_code/misc/gym_spaces.py": "9e6ae85890b66ebb55f892765437330178d9c6f465d49961b15829696244a985",
+    "bfm_zero_inference_code/nn_filters.py": "1d279d945f300acd4e545b58f80f233052b9c93edbaecb88d94fb40ec821cc15",
+    "bfm_zero_inference_code/nn_models.py": "bace2c9967320ab0cf1e570054acf1f7e0378f15690e11af11fcce462b3a9254",
+    "bfm_zero_inference_code/normalizers.py": "9b0e039e3380878d5b5caad7786d6ec0e37f1e3ae9eb48dac82085ba01175c57",
+    "common.py": "37eaaf17585f08ebf769b5ea3d70e36cbe90077e8b47060601b0ce3be3561c84",
+    "download_hf_model.py": "a44d1f116138ba00d3b930500f546ce84f935640df6f3c9c2444cb85af803339",
+    "env.py": "a65357ce9df441aa87ce812e1224393e03bea919544942967da5cdabb1f9f9d5"
+  },
+  "configuration_sha256": {
+    "config.json": "aee5e94fd089979cb31d1f1a5fa4905e926398231d46dc8eb2047e25b8d2935b",
+    "init_kwargs.json": "b8df2d6006fbeda9a0bb9a9eb3f21dcccadf165f2252fce108714f81655a0094"
+  },
+  "exported_onnx_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+  "export_matches_original_checkpoint": true,
+  "tensor_weights_sha256": "c62bdb7a6cb1faab6d2009d4ed685ba895b568091452f07bae3912a642a5466b",
+  "tensor_weights_match_evaluated_weights": true,
+  "conversion_parity": {
+    "status": "passed",
+    "source_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+    "weights_sha256": "c62bdb7a6cb1faab6d2009d4ed685ba895b568091452f07bae3912a642a5466b",
+    "max_abs_error": 7.569789886474609e-06,
+    "cases": [
+      {
+        "batch": 1,
+        "action_max_abs_error": 8.344650268554688e-07,
+        "latent_max_abs_error": 1.5497207641601562e-06
+      },
+      {
+        "batch": 7,
+        "action_max_abs_error": 2.6226043701171875e-06,
+        "latent_max_abs_error": 1.2516975402832031e-06
+      },
+      {
+        "batch": 40,
+        "action_max_abs_error": 7.569789886474609e-06,
+        "latent_max_abs_error": 1.3113021850585938e-06
+      },
+      {
+        "batch": 256,
+        "action_max_abs_error": 6.67572021484375e-06,
+        "latent_max_abs_error": 2.0265579223632812e-06
+      }
+    ],
+    "reference": "Original ONNX per environment, including endpoint target masks"
+  },
+  "conversion_receipt_sha256": "f39fe0787f40b8e68218df85044205e044afe42c7398b39158c896a8f5c90843",
+  "runtime_sha256": "5c0dc6d8c96c326f8aed6fccb2c624efcab85d7abac79342f38da35b5dede5f4",
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "onnx": "1.21.0",
+    "pydantic": "2.12.5",
+    "gymnasium": "1.2.2"
+  },
+  "offline_original_cache_reuse": "passed",
+  "elapsed_s": 11.871429413557053
+}

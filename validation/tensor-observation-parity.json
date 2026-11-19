@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "steps": 15,
+  "batch": 7,
+  "partial_reset_slots": [
+    1,
+    5
+  ],
+  "includes_clamped_endpoints": true,
+  "observation_max_abs_errors": [
+    0.0,
+    0.0,
+    0.0,
+    4.76837158203125e-07,
+    1.4551915228366852e-11,
+    0.0
+  ],
+  "network_max_abs_error": 4.5299530029296875e-06,
+  "reference_fk_oracle": "CPU MuJoCo kinematics and SciPy quaternion finite differences"
+}

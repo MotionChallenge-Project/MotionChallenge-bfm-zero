@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "slots": 4096,
+  "forward_batch_sizes": [
+    4096,
+    4096,
+    4096,
+    4096
+  ],
+  "steps": 4,
+  "partial_reset_slots": [
+    1,
+    4095
+  ],
+  "seven_slot_consistency_max_abs_error": 1.8477439880371094e-06,
+  "forward_seconds": [
+    0.12799788638949394,
+    0.03865859657526016,
+    0.03856508433818817,
+    0.038523152470588684
+  ],
+  "peak_torch_allocated_bytes": 841614336,
+  "peak_torch_reserved_bytes": 1059061760,
+  "device": "NVIDIA A100-SXM4-80GB"
+}

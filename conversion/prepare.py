@@ -60,10 +60,10 @@ def build_inference(source, weights):
     return model, cfg
 
 
-def prepare(destination, source=None, weights=None):
+def prepare(destination, source=None, weights=None, cache=None):
     import torch
 
-    cache = Path(os.environ.get('BFM_ZERO_ARTIFACT_CACHE', '~/.cache/MotionChallenge/bfm-zero')).expanduser()
+    cache = Path(cache) if cache is not None else Path(os.environ.get('BFM_ZERO_ARTIFACT_CACHE', '~/.cache/MotionChallenge/bfm-zero')).expanduser()
     source = Path(source) if source else cache/'source'
     weights = Path(weights) if weights else cache/'weights'
     manifest = load_sources(source)
@@ -81,7 +81,7 @@ def prepare(destination, source=None, weights=None):
         output = Path(temporary)/'policy.onnx'
         torch.onnx.export(model, inputs, str(output), input_names=names,
                           output_names=['action', 'latent'], opset_version=17, dynamo=False)
-        expected = json.loads(Path(__file__).parents[1].joinpath('runtime.json').read_text())['weights_sha256']
+        expected = json.loads(Path(__file__).parents[1].joinpath('runtime.mjwarp.json').read_text())['weights_sha256']
         actual = sha256_file(output)
         if actual != expected:
             raise ValueError(f'Export SHA256 mismatch: {actual} != {expected}')

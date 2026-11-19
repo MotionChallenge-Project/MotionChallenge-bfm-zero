@@ -1,0 +1,27 @@
+{
+  "status": "verified_author_release",
+  "eligible_for_official_leaderboard": true,
+  "author_repository": "https://github.com/LeCAR-Lab/BFM-Zero",
+  "original_files": [
+    {
+      "url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/resolve/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
+      "sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e",
+      "bytes": 3384968272,
+      "role": "author_original"
+    }
+  ],
+  "official_release_evidence": [
+    {
+      "url": "https://github.com/LeCAR-Lab/BFM-Zero/blob/df9c4a9633aa155c727419e82c906010b1e1845f/download_hf_model.py",
+      "evidence": "Author downloader selects the LeCar-Lab/BFM-Zero model repository."
+    }
+  ],
+  "conversion_only": true,
+  "runtime_sha256_unchanged": "5c0dc6d8c96c326f8aed6fccb2c624efcab85d7abac79342f38da35b5dede5f4",
+  "inference_evidence": [
+    "validation/mjwarp-network-parity.json",
+    "validation/tensor-observation-parity.json",
+    "validation/full-batch-capacity.json"
+  ],
+  "full_native_conversion_evidence": "validation/native-full-bootstrap.json"
+}

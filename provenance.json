@@ -5,22 +5,33 @@
   "upstream": "https://github.com/LeCAR-Lab/BFM-Zero",
   "source_commit": "df9c4a9633aa155c727419e82c906010b1e1845f",
   "checkpoint_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
-  "author_inference_review": "Numerical comparison against pinned author inference: validation/native-parity.json",
-  "benchmark_physics": "Shared canonical G1 nominal physics and initialization.",
+  "author_inference_review": "Pinned original inference, tensor observation and 4096-slot parity reports in validation/.",
+  "benchmark_physics": "MJWarp shared G1 protocol: 20 ms control, four 5 ms substeps, friction 1.0, Newton maximum 50 iterations.",
   "redistribution": "checkpoint not distributed in Git; obtain from recorded upstream URL under its original terms",
   "checkpoint_origin": {
     "author_release_url": "https://github.com/LeCAR-Lab/BFM-Zero/blob/df9c4a9633aa155c727419e82c906010b1e1845f/README.md",
     "author_release_label": "LeCAR-Lab/BFM-Zero",
-    "kind": "maintainer_export",
-    "kind_label": "Reproducible export from author checkpoint",
+    "kind": "author_file",
+    "kind_label": "Author-released native checkpoint",
     "artifact_page_url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/blob/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
-    "original_filename": "model/checkpoint/model/model.safetensors \u2192 policy.onnx",
-    "verification": "conversion/prepare.py verifies the original artifact and source hashes, strictly loads62 inference tensors and exports a hash-locked ONNX. Fresh macOS export matches prior Linux SHA256.",
+    "original_filename": "model/checkpoint/model/model.safetensors",
+    "verification": "Complete public native checkpoint SHA256 verified. The model-owned exporter reproduces the original ONNX hash; local safetensor conversion exactly matches the evaluated weights. See validation/native-full-bootstrap.json.",
     "download_url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/resolve/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
-    "sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+    "sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e",
     "original_sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e",
     "conversion_code": "conversion/prepare.py",
-    "source_manifest": "conversion/sources.json"
+    "source_manifest": "conversion/sources.json",
+    "derived_onnx_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+    "bytes": 3384968272
   },
-  "inference_validation": "validation/native-parity.json"
+  "inference_validation": "validation/mjwarp-network-parity.json",
+  "conversion": {
+    "original_author_sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e",
+    "exported_onnx_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+    "tensor_weights_sha256": "c62bdb7a6cb1faab6d2009d4ed685ba895b568091452f07bae3912a642a5466b",
+    "evidence": "validation/native-full-bootstrap.json"
+  },
+  "official_weight_source": true,
+  "leaderboard_eligible": true,
+  "origin_audit": "validation/origin-audit.json"
 }

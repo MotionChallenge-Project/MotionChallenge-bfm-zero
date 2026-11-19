@@ -1,15 +1,11 @@
 [project]
 name = "MotionChallenge-bfm-zero"
-version = "0.1.0"
+version = "0.2.0"
 requires-python = ">=3.12,<3.13"
-dependencies = ["MotionChallenge-Core", "torch==2.14.1", "onnx==1.23.2",
-                "safetensors==0.7.0", "gymnasium==1.2.2", "pydantic==2.12.5"]
+dependencies = ["MotionChallenge-Core", "gymnasium==1.2.2", "pydantic==2.12.5"]
+
+[tool.uv]
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
 
 [tool.uv.sources]
 motionchallenge-core = {path = "MotionChallenge-Core", editable = true}
-torch = [{index = "pytorch-cpu", marker = "sys_platform == 'linux'"}]
-
-[[tool.uv.index]]
-name = "pytorch-cpu"
-url = "https://download.pytorch.org/whl/cpu"
-explicit = true

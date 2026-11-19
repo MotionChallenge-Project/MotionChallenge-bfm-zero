@@ -1,0 +1,45 @@
+{
+  "id": "bfm-zero-g1",
+  "entrypoint": "restricted:create",
+  "control_period_s": 0.02,
+  "reference_step_s": 0.02,
+  "reference_offsets_s": [
+    -0.02,
+    0.0,
+    0.02,
+    0.04,
+    0.06,
+    0.08,
+    0.1,
+    0.12,
+    0.14
+  ],
+  "reference_history_s": 0.02,
+  "reference_preview_s": 0.14,
+  "state_access": "proprioceptive-no-position-no-linear-velocity-v1",
+  "action_mode": "joint-pd-feedforward",
+  "inference_config": "policy.json",
+  "inference_config_sha256": "39e4605b2a0dbb99379203fddc007d8b0ca23d4e1f9796569889097b78be71bf",
+  "weights": "checkpoints/policy.onnx",
+  "weights_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+  "provenance_status": "Author inference comparison passed; see validation/native-parity.json",
+  "source_repository": "https://github.com/LeCAR-Lab/BFM-Zero",
+  "source_commit": "df9c4a9633aa155c727419e82c906010b1e1845f",
+  "tracking_inference": "official uniform 8-frame latent mean, not notebook customized discount variant",
+  "official": false,
+  "prepare_checkpoint": "conversion.prepare:prepare",
+  "observation_contract": {
+    "admission_record": "admission.mjwarp.json",
+    "admission_sha256": "71927ba59cec90745e4eae0a4664a8c97a2000611382059d1561696ba41bcea4"
+  },
+  "batch_entrypoint": "parallel:create",
+  "inference_workers": 8,
+  "migration_status": "inference_verified",
+  "tensor_entrypoint": "tensor_adapter:TensorBFMZero",
+  "tensor_conversion": "convert_weights:prepare",
+  "tensor_assets_sha256": {
+    "reference_model.json": "b31f93e23dd22547cd424ceff19aeba11e45da3e46a3f034e347543f95ab2027",
+    "conversion/sources.json": "d0b3810bd1dd55d7312cde6d9aaec04150a4388afda5234576992415dcfa0a62",
+    "conversion/prepare.py": "6774017095a32bf47a297ff3584a72b266bc4c322e183c7deb356266b9352fac"
+  }
+}

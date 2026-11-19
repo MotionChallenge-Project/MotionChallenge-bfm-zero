@@ -1,0 +1,18 @@
+{
+  "model": "bfm-zero",
+  "status": "passed",
+  "errors": [],
+  "core_commit": "2221fab60a90adc3c85b1dfd438e00244fb58263",
+  "runtime_sha256": "5c0dc6d8c96c326f8aed6fccb2c624efcab85d7abac79342f38da35b5dede5f4",
+  "locked_environment_and_cli": true,
+  "own_core_import": "/mnt/volumes/nexus-train-bd-ga/swd/motionchallenge-mjwarp/MotionChallenge-bfm-zero/MotionChallenge-Core/src/motion_challenge/__init__.py",
+  "admission_and_source_hashes": true,
+  "modules": [
+    "conversion.prepare",
+    "convert_weights",
+    "evaluate",
+    "reference_kinematics",
+    "tensor_adapter",
+    "tensor_policy"
+  ]
+}

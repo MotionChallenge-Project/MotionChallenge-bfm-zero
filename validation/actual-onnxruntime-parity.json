@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "onnxruntime_version": "1.30.0",
+  "scalar_inputs": 7,
+  "gpu_batch": 7,
+  "max_abs_errors": {
+    "action": 1.0654330253601074e-06,
+    "latent": 1.6689300537109375e-06
+  },
+  "source_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+  "encoder_sha256": null
+}

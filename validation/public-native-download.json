@@ -1,0 +1,10 @@
+{
+  "model": "bfm-zero",
+  "component": "native",
+  "url": "https://huggingface.co/LeCAR-Lab/BFM-Zero/resolve/62b4206d68e026de5e5dc7efb1529bccfb95164c/model/checkpoint/model/model.safetensors",
+  "sha256": "d8d07d7b83ad030286f44d55a48899dc42db4b48000132fffad063653a6eb49e",
+  "bytes": 3384968272,
+  "status": "full_download_sha256_verified",
+  "reused_bytes": 2129494016,
+  "range_download_seconds": 314.52598495800004
+}

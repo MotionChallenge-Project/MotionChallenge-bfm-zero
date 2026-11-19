@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "exported_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+  "expected_sha256": "cdc9d6454d72b00fabfd1c2ab26ad463a5638cde4e3ac82946975d1e459d9939",
+  "torch_version": "2.14.1+cu130",
+  "fixture": "Previously extracted original inference tensors; public network/config sources pinned and verified",
+  "scope": "Native inference construction and deterministic ONNX export only; full source download was not available",
+  "onnx_version": "1.21.0",
+  "pydantic_version": "2.13.3",
+  "core_locked_onnx": true
+}
